@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>GreenHellStarter</title>
+        <link href="Assets/bootstrap-5.3.7-dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+
+        <style>
+      /* underline hover */
+      .nav-link.underline-hover {
+        position: relative;
+        display: inline-block;
+        color: white !important;
+        padding-bottom: 5px;
+      }
+
+      .nav-link.underline-hover::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: red;
+        transition: width 0.3s ease-in-out;
+      }
+
+      .nav-link.underline-hover:hover::after {
+        width: 100%;
+      }
+
+      /* responsive font sizing */
+      @media (max-width: 991.98px) {
+        .navbar-brand {
+          text-align: center;
+          width: 100%;
+        }
+
+        .navbar-nav {
+          text-align: center;
+        }
+
+        .navbar-nav .nav-item {
+          margin-bottom: 0.5rem;
+        }
+      }
+    </style>
+    </head>
+
+    <body style="background-color: rgb(201, 201, 201); padding-top: 80px;">
+        <!-- Start navbar -->
+<nav class="navbar navbar-expand-lg bg-black fixed-top">
+  <div class="container">
+    <!-- Brand -->
+    <a class="navbar-brand d-flex flex-column align-items-start col" href="#">
+      <span style="font-size: 2.5rem; line-height: 1; color: white;">Green</span>
+      <span style="font-size: 1rem; letter-spacing: 2px; color: red; margin-top: -5px;">Hell Beginner</span>
+    </a>
+
+    <!-- Hamburger -->
+    <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0" style="font-size: 1.2rem;">
+        <li class="nav-item">
+          <a class="nav-link underline-hover px-3" href="#OP">Starter Guide</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-hover px-3" href="#HUD">HUD System</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-hover px-3" href="#Backpack">Backpack</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-hover px-3" href="#Notebook">Notebook</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-hover px-3" href="#Crafting">Crafting</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link underline-hover px-3" href="#Steam">Steam</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End navbar -->
+
+
+        <!-- Start HomePage -->
+        <section class="py-5 text-center text-white"
+            style="background: url('Assets/Image/Story_Mode.webp') center center / cover no-repeat;">
+            <div class="container px-4"
+                style="background-color: rgba(0, 0, 0, 0.6); padding: 2rem; border-radius: 15px;">
+                <img src="Assets/Image/01.jpg" alt="Icon"
+                    class="img-fluid mb-3" style="width: 60px;">
+                <p class="fs-5 mb-0">
+                    Welcome to <strong>Green Hell Beginner</strong><br>
+                    Green Hell is an open world survival simulator set in the
+                    uncharted Amazonian rainforest.<br>
+                    Green Hell released August 29th, 2018 and is being developed
+                    by Creepy Jar.
+                </p>
+            </div>
+        </section>
+
+        <section class="py-5" style="background-color: rgb(36, 36, 36);">
+            <div class="container text-white">
+                <div class="row align-items-center">
+                    <div class="col-sm-6 col-md-6 col-lg-6 mb-4 mb-md-0">
+                        <img src="Assets/Image/02.webp" alt="Organic Product"
+                            class="img-fluid rounded" style="width: 500px;">
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <h3 class="fw-bold mb-3 text-center">About</h3>
+
+                        <p class="text-center">
+                            Green Hell is a sweltering struggle for survival in
+                            the Amazonian rainforest. Clinging to life, the
+                            player is set on a journey of durability as the
+                            effects of solitude wear heavy not only on the body
+                            but also the mind. How long will can you survive
+                            against the dangers of the unknown? Having only a
+                            radio at your disposal you will follow a familiar
+                            voice through a seemingly endless and ruthlessly
+                            inhospitable jungle. Bit by bit, you will unveil
+                            more of the mystery of how you came to be in this
+                            hostile situation and what you discover just might
+                            be worse than what you fought so hard against to
+                            survive.
+                        </p>
+                        <p class="text-center">
+                            Green Hell can be purchased through Steam for
+                            Windows PC and is also available for PS4, Xbox One
+                            and Nintendo Switch!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/Image/cj.png"
+                        class="d-block w-100 " alt="..."
+                        style="height: 30vh; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        <!--  End HomePage  -->
+
+        <!--  Start How Works Page  -->
+        <section id="OP" class="py-5 text-center"
+            style="background-color: white;">
+            <div class="container">
+                <h1 class="fw-bold text-dark">Green Hell Starter Guide</h1>
+            </div>
+        </section>
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/Image/Hunting.webp"
+                        class="d-block w-100" alt="..."
+                        style="height: 45vh; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        <section class="bg-black">
+            <div class="container text-center py-5">
+                <h1 class="fw-bold" id="HUD" style="color: rgb(136, 226, 1);">How the HUD
+                    works
+                    in Green Hell</h1>
+            </div>
+        </section>
+        <section class="py-5" style="background-color: rgb(36, 36, 36);">
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-md-12">
+                        <img src="Assets/Image/03.jpg" class="img-fluid mb-3">
+                        <div class="col-md-12 ">
+                            <ol class="text-white">
+                                <li>
+                                    <strong>Smartwatch</strong> – This has
+                                    several functions:
+                                    <ul class="text-light">
+                                        <li><strong>Macroelements</strong> –
+                                            Shows levels of Proteins,
+                                            Carbohydrates, Fats, and.</li>
+                                        <li><strong>Compass and GPS</strong>
+                                            –
+                                            Shows your current
+                                            coordinates.</li>
+                                        <li><strong>Clock</strong> – Shows
+                                            the
+                                            in-game time and date.</li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <strong>Status</strong> – Shows your
+                                    Sanity,
+                                    Health, Energy, and active effects:
+                                    <ul class="text-light">
+                                        <li><strong>Sanity</strong> – How
+                                            sane
+                                            you are. Affected by food, fire,
+                                            rest, and weird things.</li>
+                                        <li><strong>Health</strong> – Drops
+                                            to 0
+                                            = you die. Depends on
+                                            Macroelements.</li>
+                                        <li><strong>Energy</strong> –
+                                            Affected
+                                            by activity and sleep. Drops to
+                                            0 =
+                                            pass out.</li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <strong>Status Effects</strong> –
+                                    Appears
+                                    above health bar (e.g., wounds, illness,
+                                    bandages).
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-black">
+            <div class="container text-center py-5">
+                <h1 class="fw-bold" id="Backpack" style="color: rgb(136, 226, 1);">How the
+                    Backpack
+                    works
+                    in Green Hell</h1>
+            </div>
+        </section>
+        <section class="py-5" style="background-color: rgb(36, 36, 36);">
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-md-12">
+                        <img src="Assets/Image/04.jpg"
+                            class="img-fluid mb-3">
+                        <ol class="text-white">
+                            <li>
+                                <strong>Weapons and Tools</strong> – This is
+                                where you'll store any Weapons or Tools you're
+                                carrying. You can carry a maximum of four
+                                Weapons or Tools at any time, plus a Knife in
+                                the fifth slot on the right.
+                            </li>
+                            <li>
+                                <strong>Sticks and Rope</strong> – You can hold
+                                10 Sticks or Bamboo Sticks on the top, 10 Small
+                                Sticks on the bottom, and 10 Rope on the hoops
+                                below that.
+                            </li>
+                            <li>
+                                <strong>Materials</strong> – This is where
+                                you'll store all Crafting materials, most
+                                Medicine, and anything else that isn't Food.
+                            </li>
+                            <li>
+                                <strong>Food and Water</strong> – This is where
+                                you store any Food or Water you're carrying.
+                            </li>
+                            <li>
+                                <strong>Fire</strong> – This side of the
+                                Backpack can store up to 4 Planks and/or
+                                fire-starting devices in any combination. It
+                                also has 3 dedicated slots for Fiber below that.
+                            </li>
+                            <li>
+                                <strong>Weight</strong> – This shows your
+                                current Weight and your maximum Weight.
+                                Everything you carry in your Backpack or hands
+                                has Weight. If you go over the maximum Weight,
+                                you'll be unable to run (and you might not be
+                                able to move at all). Carrying Logs or Long
+                                Sticks in your hands also adds to your total
+                                Weight, so try to stay under the limit if you're
+                                gathering materials.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-black">
+            <div class="container text-center py-5">
+                <h1 class="fw-bold" id="Notebook" style="color: rgb(136, 226, 1);">How the
+                    Notebook
+                    works
+                    in Green Hell</h1>
+            </div>
+        </section>
+        <section class="py-5" style="background-color: rgb(36, 36, 36);">
+            <div class="container">
+                <div class="row align-items-start">
+                    <div class="col-md-12">
+                        <img src="Assets/Image/05.jpg"
+                            class="img-fluid mb-3">
+
+                        <ol class="text-white">
+                            <li>
+                                <strong>Objectives</strong> – A checklist
+                                showing what you need to do to progress in the
+                                game and which objectives you’ve already
+                                completed.
+                            </li>
+                            <li>
+                                <strong>Story</strong> – Displays notes and
+                                drawings that detail your story progress.
+                            </li>
+                            <li>
+                                <strong>Crafting Recipes</strong> – Lists all
+                                crafting recipes you’ve discovered.
+                            </li>
+                            <li>
+                                <strong>Plants</strong> – Shows all plants
+                                you’ve identified.
+                            </li>
+                            <li>
+                                <strong>Health</strong> – Displays all negative
+                                status effects you’ve personally experienced and
+                                known treatments.
+                            </li>
+                            <li>
+                                <strong>Skills</strong> – Shows your skill
+                                progression and the benefits each skill
+                                provides. Skills increase as you perform related
+                                actions (e.g., cooking food raises Cooking
+                                skill).
+                            </li>
+                            <li>
+                                <strong>Frames and Basic Shelters</strong> –
+                                Allows you to build basic shelters and modular
+                                building pieces.
+                            </li>
+                            <li>
+                                <strong>Walls and Roofs</strong> – Enables
+                                construction of walls, ceilings, doors, ladders,
+                                and other architectural components.
+                            </li>
+                            <li>
+                                <strong>Cooking</strong> – Lets you build
+                                campfires, dryers, and other food-related items.
+                            </li>
+                            <li>
+                                <strong>Crafting and Farming</strong> – Lets you
+                                build farming tools like planting boxes and
+                                crafting tools like the Mud Charcoal Furnace.
+                            </li>
+                            <li>
+                                <strong>Furniture and Man Traps</strong> –
+                                Allows building of furniture and anti-personnel
+                                traps.
+                            </li>
+                            <li>
+                                <strong>Animal Traps</strong> – Enables
+                                construction of traps used to catch animals.
+                            </li>
+                            <li>
+                                <strong>Storage</strong> – Lets you build
+                                storage units for crafting materials and other
+                                items.
+                            </li>
+                        </ol>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/Image/Sunset.webp"
+                        class="d-block w-100" alt="..."
+                        style="height: 30vh; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        <!-- End How Works Page -->
+
+        <!-- Start Crafting Page -->
+        <section class="bg-black">
+            <div class="container text-center py-5">
+                <h1 class="fw-bold" id="Crafting"
+                    style="color: rgb(136, 226, 1);">Crafting</h1>
+                <p class="text-white">Crafting is a gameplay feature where new
+                    items can be created by combining crafting materials</p>
+            </div>
+        </section>
+        <section class="py-5 "
+            style="background-color: rgb(36, 36, 36); height: 60vh;">
+            <div class="container">
+                <h2 class="text-center mb-4">Traditional Thai Workshops for
+                    Hands-on Experiences</h2>
+
+                <div id="carouselExampleInterval" class="carousel slide"
+                    data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+
+                        <div class="carousel-item active"
+                            data-bs-interval="5000">
+                            <p class="text-white">Armor</p>
+                            <img src="Assets/Image/Banana Leaf.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Rope.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Leaf Armor.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <p class="text-white">Banana Leaf + Rope(2) = Leaf
+                                Armor</p>
+                        </div>
+                        <div class="carousel-item active"
+                            data-bs-interval="5000">
+                            <p class="text-white">Axes</p>
+                            <img src="Assets/Image/Small stone.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Stick.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Axe.webp"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <p class="text-white"> Small Stone + Stick = Stone
+                                Axe</p>
+                        </div>
+                        <div class="carousel-item active"
+                            data-bs-interval="5000">
+                            <p class="text-white">Blades</p>
+                            <img src="Assets/Image/Molineria Leaf.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Leaf Bandage.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <p class="text-white"> Molineria Leaf = Leaf
+                                Bandage</p>
+                        </div>
+                        <div class="carousel-item active"
+                            data-bs-interval="5000">
+                            <p class="text-white">Bows & Arrows</p>
+                            <img src="Assets/Image/Long stick.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Rope.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Bow.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <p class="text-white"> Long Stick + Rope = Bow</p>
+
+                            <img src="Assets/Image/Small stick.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Feather.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Arrow.webp"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <p class="text-white"> Small Stick + Feather(2) =
+                                Arrow</p>
+                        </div>
+                        <div class="carousel-item active"
+                            data-bs-interval="5000">
+                            <p class="text-white">Hand Tools</p>
+                            <img src="Assets/Image/Coconut.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Rope.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Coconut Bidon.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <p class="text-white">Coconut + Rope = Coconut
+                                Bidon</p>
+
+                            <img src="Assets/Image/Small stick.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Stick.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Hand Drill.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <p class="text-white">Stick + Small Stick = Hand
+                                Drill</p>
+                        </div>
+                        <div class="carousel-item active"
+                            data-bs-interval="5000">
+                            <p class="text-white">Spears</p>
+                            <img src="Assets/Image/Long stick.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <img src="Assets/Image/Weak Spear.png"
+                                class="img-fluid mb-3"
+                                style="max-width: 500px;">
+                            <p class="text-white"> Long Stick = Weak Spear</p>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button"
+                        data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span
+                            class="carousel-control-prev-icon bg-dark rounded-circle"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"
+                        data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span
+                            class="carousel-control-next-icon bg-dark rounded-circle"
+                            aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Assets/Image/Waterfall.webp"
+                        class="d-block w-100" alt="..."
+                        style="height: 30vh; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        <!--  End Crafting Page  -->
+
+        <!-- Start Shop Page -->
+
+        <section id="Steam" class="py-5" style="background-color: rgb(36, 36, 36);">
+            <div class="card mb-3 mx-auto" style="max-width: 600px;">
+                <div class="row g-0">
+                    <div class="col my-2 mx-2 text-center">
+                        <img src="Assets/Image/Logo.jpg"
+                            class="img-fluid rounded-start mb-3">
+                        <a
+                            href="https://store.steampowered.com/app/815370/Green_Hell/"
+                            target="_blank"
+                            class="btn btn-dark mt-3">
+                            Play on Steam
+                        </a>
+                    </div>
+                    <div class="col">
+                        <div class="card-body">
+                            <h5 class="card-title">Green Hell</h5>
+                            <p class="card-text">
+                                Plunge into the open-world survival simulation
+                                set in the extreme conditions of the
+                                uncharted Amazon jungle. Use real-life survival
+                                techniques to craft, hunt, fight, and gather
+                                resources,
+                                set a makeshift shelter, or raise a fortress.
+                                Survive alone or team up with your friends and
+                                challenge the
+                                jungle together.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--  End Shop Page  -->
+
+        <!-- Start Footer -->
+        <footer class="bg-black text-white pt-4 pb-3 mt-5">
+            <div class="container text-center">
+                <h5 class="mb-3 fw-bold" style="color: rgb(136, 226, 1);">Green
+                    Hell Beginner</h5>
+                <p class="mb-1">An unofficial fan-made guide for new survivors
+                    in Green Hell.</p>
+                <p class="mb-2">Developed with 💚 for the community by P&P.</p>
+                <div class="d-flex justify-content-center gap-3 mb-3">
+                    <a
+                        href="https://store.steampowered.com/app/815370/Green_Hell/"
+                        class="text-white text-decoration-none"
+                        target="_blank">Steam</a>
+                    <span>|</span>
+                    <a href="#OP"
+                        class="text-white text-decoration-none">Starter
+                        Guide</a>
+                    <span>|</span>
+                    <a href="#"
+                        class="text-white text-decoration-none">Home</a>
+                </div>
+                <small>&copy; 2025 Green Hell Beginner. All rights
+                    reserved.</small>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <script
+            src="Assets/bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
